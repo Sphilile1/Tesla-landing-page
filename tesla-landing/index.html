@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Electric Cars</title>
+
+<style>
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1619767886558-efdc259cde1a") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 12px 30px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: white;
+  color: black;
+}
+
+.btn-secondary {
+  background: rgba(0,0,0,0.6);
+  color: white;
+}
+
+.hero button:hover {
+  opacity: 0.85;
+}
+
+/* ---------- MODELS ---------- */
+.models {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.model-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.model {
+  border: 1px solid #ddd;
+  padding: 25px;
+  width: 150px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.model:hover {
+  background: #f4f4f4;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #111;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .model-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div><strong>E-Cars</strong></div>
+  <div>
+    <a href="#">Models</a>
+    <a href="#">Energy</a>
+    <a href="#">Charging</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Experience Electric Driving</h1>
+  <p>Clean. Fast. Sustainable.</p>
+  <div>
+    <button class="btn-primary">Order Now</button>
+    <button class="btn-secondary">Learn More</button>
+  </div>
+</section>
+
+<!-- MODELS -->
+<section class="models">
+  <h2>Our Models</h2>
+  <div class="model-list">
+    <div class="model">Model S</div>
+    <div class="model">Model 3</div>
+    <div class="model">Model X</div>
+    <div class="model">Model Y</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#">Privacy</a>
+  <a href="#">Contact</a>
+  <a href="#">Careers</a>
+  <p style="margin-top:10px;font-size:12px;">© 2026 Electric Cars</p>
+</footer>
+
+</body>
+</html>
+
+
